@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Morning Hotell - Boka</title>
+    <meta name="description" content="Boka rum hos Good Morning Hotell snabbt och enkelt.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="boka.html">Boka</a>
+            <a href="hitta.html">Hitta</a>
+            <a href="kontakta.html">Kontakta</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Boka rum</h1>
+
+        <div class="footer-row">
+            <!-- Bokningsformulär -->
+            <div class="footer-box">
+                <h2>Fyll i dina uppgifter</h2>
+                <form id="bookingForm" class="booking-form">
+                    <label for="namn">Namn:</label><br>
+                    <input type="text" id="namn" name="namn" required><br><br>
+
+                    <label for="email">E-post:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="datum">Datum:</label><br>
+                    <input type="date" id="datum" name="datum" required><br><br>
+
+                    <label for="antal">Antal gäster:</label><br>
+                    <select id="antal" name="antal">
+                        <option value="1">1 person</option>
+                        <option value="2">2 personer</option>
+                        <option value="3">3 personer</option>
+                        <option value="4">4 personer</option>
+                        <option value="5">5+ personer</option>
+                    </select><br><br>
+
+                    <label for="rum">Rumstyp:</label><br>
+                    <select id="rum" name="rum">
+                        <option value="standard">Standardrum</option>
+                        <option value="deluxe">Deluxerum</option>
+                        <option value="familj">Familjerum</option>
+                        <option value="svit">Svit</option>
+                    </select><br><br>
+
+                    <input type="submit" value="Boka">
+                </form>
+            </div>
+
+            <!-- Rumstyper -->
+            <div class="footer-box">
+                <h2>Våra rumstyper</h2>
+                <ul class="rumslista">
+                    <li><strong>Standardrum</strong><br>Bekvämt rum med basutrustning från 999 kr/natt</li>
+                    <li><strong>Deluxerum</strong><br>Extra rymligt med bättre utsikt och bekvämligheter från 1499
+                        kr/natt</li>
+                    <li><strong>Familjerum</strong><br>Perfekt för barnfamiljer, extra sängar tillgängliga från 1799
+                        kr/natt</li>
+                    <li><strong>Svit</strong><br>Lyxigt boende med separat vardagsrum från 2499 kr/natt</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Good Morning, Stadiongatan 21, 217 62 Malmö</p>
+        <a href="mailto:aldinkpo1221@gmail.com">aldinkpo1221@gmail.com</a>
+    </footer>
+</body>
+
+</html>
